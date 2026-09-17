@@ -1,12 +1,16 @@
 # CSV Loader
 
-A Python project demonstrating memory-efficient CSV data processing using a custom lazy iterator.
+A Python project demonstrating memory-efficient CSV data processing and
+object-oriented pipeline design.
 
 ## Objective
 
-The goal of this project is to process large CSV datasets without loading the entire dataset into memory at once.
+The project demonstrates how to process CSV datasets efficiently using
+lazy loading, batch processing, and a reusable pipeline architecture.
 
-The custom `CSVBatchIterator` reads the CSV file lazily and yields one batch of rows at a time.
+The project was developed as part of an AI/ML learning track, focusing on
+memory-efficient data handling and object-oriented programming for data
+pipelines.
 
 ## Features
 
@@ -15,6 +19,9 @@ The custom `CSVBatchIterator` reads the CSV file lazily and yields one batch of 
 - Batch processing
 - Memory-efficient data handling
 - Memory usage measurement using `tracemalloc`
+- Abstract base classes
+- Composition over inheritance
+- Interchangeable pipeline steps
 - Automated testing using `pytest`
 
 ## Project Structure
@@ -27,9 +34,13 @@ csv-loader/
 │   └── data_10000.csv
 ├── scripts/
 ├── tests/
-│   └── test_csv_iterator.py
+│   ├── test_csv_iterator.py
+│   └── test_pipeline.py
 ├── csv_iterator.py
 ├── memory_test.py
+├── pipeline.py
+├── steps.py
+├── pipeline_demo.py
 ├── requirements.txt
 ├── README.md
 └── .gitignore
