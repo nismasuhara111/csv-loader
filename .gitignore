@@ -1,0 +1,27 @@
+# Virtual environment
+venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Pytest cache
+.pytest_cache/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Data files
+data/*.csv
+
+# Keep sample data for testing
+!data/sample_data.csv
+
+# Model files
+*.pkl
+*.joblib
+*.h5
+*.keras
+
+# Environment files
+.env
