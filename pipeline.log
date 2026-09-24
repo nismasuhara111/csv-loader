@@ -1,0 +1,7 @@
+{"timestamp": "2026-09-24T00:44:33.462949", "level": "INFO", "logger": "pipeline", "message": "Pipeline execution started"}
+{"timestamp": "2026-09-24T00:44:33.463356", "level": "INFO", "logger": "pipeline", "message": "Loading input data"}
+{"timestamp": "2026-09-24T00:44:33.965204", "level": "INFO", "logger": "pipeline", "message": "Records processed: 10"}
+{"timestamp": "2026-09-24T00:44:33.967012", "level": "INFO", "logger": "pipeline", "message": "Pipeline execution completed in 0.5025 seconds"}
+{"timestamp": "2026-09-24T00:45:50.784975", "level": "INFO", "logger": "pipeline", "message": "Starting deliberately failed pipeline"}
+{"timestamp": "2026-09-24T00:45:50.786042", "level": "INFO", "logger": "pipeline", "message": "Attempting to load missing file"}
+{"timestamp": "2026-09-24T00:45:50.805794", "level": "ERROR", "logger": "pipeline", "message": "Pipeline failed while loading input file", "exception": "Traceback (most recent call last):\n  File \"C:\\Users\\azar2\\OneDrive\\Desktop\\task-management-api\\csv-loader\\logging_error_demo.py\", line 13, in run_failed_pipeline\n    with open(\"data/not_found.csv\", \"r\", encoding=\"utf-8\") as file:\n         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: 'data/not_found.csv'"}
